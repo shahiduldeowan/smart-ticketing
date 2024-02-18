@@ -11,7 +11,8 @@
     "files.eol": "\n",
     "prettier.printWidth": 120,
     "cSpell.words": [
-        "Paribahan"
+        "Paribahan",
+        "tailwindcss"
     ],
 
     // Language-specific settings
