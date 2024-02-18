@@ -26,6 +26,7 @@
           extend: {
             colors: {
               "primary-color": "#1dd100",
+              "gray-text-color": "#030712",
             },
           },
         },
@@ -36,7 +37,7 @@
   <body class="font-inter">
     <header class="w-11/12 lg:container m-auto">
       <!-- Navbar Section Start -->
-      <div class="navbar bg-base-100 font-raleway">
+      <div class="navbar bg-base-100 font-raleway mb-7">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -78,16 +79,85 @@
 
       <!-- Banner Section Start -->
       <div
-        class="min-h-60 md:min-h-96 lg:min-h-[34.375rem] bg-center bg-cover w-full bg-no-repeat rounded-[2rem]"
+        class="min-h-60 md:min-h-96 lg:min-h-[34.375rem] bg-center bg-cover w-full bg-no-repeat rounded-[2rem] flex flex-col justify-center items-center relative"
         style="
           background-image: linear-gradient(180deg, rgba(3, 7, 18, 0.5), rgba(3, 7, 18, 0) 100%),
             url(./images/banner.png);
         "
-      ></div>
+      >
+        <h1
+          class="font-raleway text-center text-3xl lg:text-6xl font-extrabold leading-10 lg:leading-[5.375rem] mb-1 lg:mb-4"
+        >
+          <span class="text-white">End-to-End Travel with</span><br />
+          <span class="text-primary-color">P Paribahan</span>
+        </h1>
+        <p class="font-inter text-white text-sm lg:text-lg w-11/12 lg:w-6/12 text-center opacity-70 mb-2 lg:mb-8">
+          Explore in style! Discover breathtaking views and hidden gems on our scenic bus tours. Unforgettable journeys
+          await.
+        </p>
+        <button
+          class="font-raleway btn btn-xs sm:btn-sm lg:btn-md border-none lg:rounded-xl text-base lg:text-xl bg-primary-color font-bold"
+        >
+          Buy Tickets
+        </button>
+        <div class="w-10/12 font-inter hidden lg:flex justify-between absolute -bottom-16">
+          <div class="w-[19.25rem] bnstats shadow bg-white px-8 py-9 rounded-3xl border-b-4 border-primary-color">
+            <div class="bnstat flex items-center">
+              <div>
+                <div class="bnstat-figure text-secondary">
+                  <div class="bnavatar bnonline">
+                    <div class="w-12 rounded-full mr-4">
+                      <img class="w-full bg-cover" src="./images/people.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="bnstat-title text-4xl font-bold">500K+</div>
+                <div class="bnstat-value text-lg text-gray-text-color opacity-60">Registered users</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[19.25rem] bnstats shadow bg-white px-8 py-9 rounded-3xl border-b-4 border-primary-color">
+            <div class="bnstat flex items-center">
+              <div>
+                <div class="bnstat-figure text-secondary">
+                  <div class="bnavatar bnonline">
+                    <div class="w-12 rounded-full mr-4">
+                      <img class="w-full bg-cover" src="./images/ticket-cupon.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="bnstat-title text-4xl font-bold">1.7 lacks</div>
+                <div class="bnstat-value text-lg text-gray-text-color opacity-60">Tickets sold</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[19.25rem] bnstats shadow bg-white px-8 py-9 rounded-3xl border-b-4 border-primary-color">
+            <div class="bnstat flex items-center">
+              <div>
+                <div class="bnstat-figure text-secondary">
+                  <div class="bnavatar bnonline">
+                    <div class="w-12 rounded-full mr-4">
+                      <img class="w-full bg-cover" src="./images/stoppage.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="bnstat-title text-4xl font-bold">80K+</div>
+                <div class="bnstat-value text-lg text-gray-text-color opacity-60">Rental partners</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Banner Section End -->
     </header>
 
-    <main></main>
+    <main class="flex w-full"></main>
 
     <footer></footer>
     <script src="./scripts/index.js"></script>
