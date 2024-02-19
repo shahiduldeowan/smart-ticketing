@@ -1,1 +1,4 @@
-console.log("object :>> Hello from P.H Paribahan");
+function scrollToSectionHandler() {
+  const scrollSectionId = "seat-booking-section-id";
+  scrollToSectionById(scrollSectionId);
+}
