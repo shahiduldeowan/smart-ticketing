@@ -36,7 +36,7 @@
 
   <body class="font-inter">
     <!-- Header Start -->
-    <header class="w-11/12 lg:container mx-auto mb-44">
+    <header class="w-11/12 lg:container mx-auto mb-6 lg:mb-44">
       <!-- Navbar Section Start -->
       <div class="navbar bg-base-100 font-raleway mb-7">
         <div class="navbar-start">
@@ -160,18 +160,62 @@
     <!-- Header End -->
 
     <!-- Main Start -->
-    <main class="border-t-2 border-primary-color rounded-t-[5.5rem] mb-28">
-      <div class="w-11/12 lg:container mx-auto">
-        <!-- Coupon Section Start -->
-        <section></section>
-        <!-- Coupon Section End -->
+    <main>
+      <!-- Coupon Section Start -->
+      <section class="w-11/12 lg:container mx-auto flex flex-col items-center mb-14 lg:mb-28">
+        <h2 class="font-raleway text-center text-3xl lg:text-5xl font-bold mb-6 lg:mb-12">Best offers for you</h2>
+        <div class="w-full flex flex-col md:flex-row lg:flex-row gap-6 mb-7 lg:mb-14">
+          <div class="bg-[#FFBF0F] h-44 lg:h-56 w-full rounded-2xl lg:rounded-3xl">
+            <div class="h-full p-4 lg:p-12 flex gap-10 lg:gap-32 justify-between items-center relative">
+              <div class="font-inter text-left">
+                <h2 class="text-2xl lg:text-4xl font-black gray-text-color opacity-80">15% OFF</h2>
+                <p class="text-lg lg:text-xl font-semibold gray-text-color opacity-80">on your next purchase</p>
+                <p class="text-base lg:text-lg font-medium gray-text-color opacity-50">use by February 2024</p>
+              </div>
+              <div class="text-center font-raleway">
+                <h2 class="text-xl lg:text-3xl font-bold">NEW15</h2>
+                <p class="text-base lg:text-xl font-medium text-gray-text-color opacity-40">Coupon Code</p>
+              </div>
+              <img
+                class="h-full right-28 lg:right-48 absolute"
+                src="./images/cupon-devider.png"
+                alt="Coupon Divider"
+                srcset=""
+              />
+            </div>
+          </div>
+          <div class="bg-[#F78C9C] h-44 lg:h-56 w-full rounded-2xl lg:rounded-3xl">
+            <div class="h-full p-4 lg:p-12 flex gap-10 lg:gap-32 justify-between items-center relative">
+              <div class="font-inter text-left">
+                <h2 class="text-2xl lg:text-4xl font-black gray-text-color opacity-80">20% OFF</h2>
+                <p class="text-lg lg:text-xl font-semibold gray-text-color opacity-80">on your next purchase</p>
+                <p class="text-base lg:text-lg font-medium gray-text-color opacity-50">use by February 2024</p>
+              </div>
+              <div class="text-center font-raleway">
+                <h2 class="text-xl lg:text-3xl font-bold">Couple 20</h2>
+                <p class="text-base lg:text-xl font-medium text-gray-text-color opacity-40">Coupon Code</p>
+              </div>
+              <img class="h-full right-28 lg:right-48 absolute" src="./images/cupon-devider.png" alt="" srcset="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <button
+            class="font-raleway btn btn-outline text-primary-color btn-xs sm:btn-sm lg:btn-md lg:rounded-xl text-base lg:text-xl font-bold hover:bg-primary-color hover:border-primary-color"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
+      <!-- Coupon Section End -->
 
+      <div class="border-t-2 border-primary-color rounded-t-[5.5rem]">
         <!-- Ticket Section Start -->
-        <section></section>
+        <section class="w-11/12 lg:container h-96 mx-auto"></section>
         <!-- Ticket Section End -->
 
         <!-- Seat Booking Section Start -->
-        <section></section>
+        <section class="w-11/12 lg:container h-96 bg-green-600 mx-auto"></section>
         <!-- Seat Booking Section End -->
       </div>
     </main>
