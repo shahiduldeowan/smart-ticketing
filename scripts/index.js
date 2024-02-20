@@ -1,4 +1,5 @@
 const selectedSeats = [];
+const couponCodes = { NEW15: 15, "Couple 20": 20 };
 
 function scrollToSectionHandler() {
   const scrollSectionId = "seat-booking-section-id";
