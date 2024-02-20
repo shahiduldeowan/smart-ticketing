@@ -36,6 +36,21 @@ function updateSeatColorsById(id) {
   }
 }
 
+function doHtmlElementDisplayFlexHiddenById(id, isHidden = false) {
+  const element = document.getElementById(id);
+  const cssClassList = element.classList;
+  const hiddenCssClass = "hidden";
+  const flexCssClass = "flex";
+
+  if (isHidden === false && cssClassList && cssClassList.contains(hiddenCssClass)) {
+    cssClassList.remove(hiddenCssClass);
+    cssClassList.add(flexCssClass);
+  } else {
+    cssClassList.remove(flexCssClass);
+    cssClassList.add(hiddenCssClass);
+  }
+}
+
 /**
  * The function `updateSeatsCountById` updates the seat count displayed in an HTML element based on the
  * specified operation.
@@ -103,8 +118,18 @@ function updatePriceById(id, quantity, discount = 0) {
   let price = parseInt(element.innerText);
   price = 550 * quantity;
   if (discount && discount > 0) {
-    const discount = (price * discount) / 100;
-    price = price + discount;
+    const discountPrice = (price * discount) / 100;
+    price = price - discountPrice;
   }
   element.innerText = price;
+}
+
+function updateTextById(id, updatedText) {
+  const element = document.getElementById(id);
+  element.innerText = updatedText;
+}
+
+function isEmptyInputValueById(id) {
+  const element = document.getElementById(id);
+  return element.value.length === 0;
 }
