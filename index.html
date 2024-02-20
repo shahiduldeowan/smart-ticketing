@@ -692,11 +692,51 @@
                       </tfoot>
                     </table>
                   </div>
-                  <form class="w-full">
+                  <!-- Error Message for coupon Start here -->
+                  <div id="coupon-error-message" class="hidden mb-1 mt-2 text-red-600">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-current shrink-0 h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <span
+                      >Are you sure you typed the code correctly? Remember to check for upper/lowercase and any special
+                      characters.</span
+                    >
+                  </div>
+                  <!-- Error Message for coupon end here -->
+
+                  <!-- Coupon code success message start here -->
+                  <div id="coupon-success-message" class="w-full p-4 hidden text-green-700 font-bold">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-current shrink-0 h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <span>Congrats! You've got <span id="discount-id-for-coupon">0</span>% off your order!</span>
+                  </div>
+                  <!-- Coupon code success message end here -->
+                  <form id="coupon-form" class="w-full">
                     <div class="relative">
                       <input
-                        type="search"
-                        id=""
+                        type="text"
+                        id="coupon-code"
                         class="w-full p-4 text-sm rounded-xl bg-white focus:outline-primary-color focus:ring-primary-color focus:border-primary-color"
                         placeholder="Have any coupon?"
                       />
@@ -721,7 +761,7 @@
                       <input
                         id="passenger-name"
                         type="text"
-                        placeholder="Type here"
+                        placeholder="Enter your name"
                         class="input input-bordered input-accent w-full"
                         required
                       />
@@ -731,7 +771,7 @@
                       <input
                         id="phone-number"
                         type="tel"
-                        placeholder="Type here"
+                        placeholder="Enter your phone number"
                         class="input input-bordered input-accent w-full"
                         required
                       />
@@ -746,7 +786,11 @@
                       />
                     </div>
                     <div class="w-full mb-6">
-                      <button class="btn btn-primary w-full bg-primary-color border-none text-white text-lg font-bold">
+                      <button
+                        id="next-button"
+                        class="btn btn-primary w-full bg-primary-color border-none text-white text-lg font-bold"
+                        disabled
+                      >
                         Next
                       </button>
                     </div>
@@ -766,7 +810,7 @@
     </main>
     <!-- Main End -->
 
-    <footer>footer</footer>
+    <footer></footer>
     <script src="./scripts/utility.js"></script>
     <script src="./scripts/index.js"></script>
   </body>
