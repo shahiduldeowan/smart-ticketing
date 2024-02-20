@@ -680,7 +680,7 @@
                           <th class="text-right">Price</th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody id="table-body">
                         <!-- row 1 -->
                         <tr class="border-0">
                           <td class="text-left">C2</td>
@@ -708,7 +708,9 @@
                         placeholder="Have any coupon?"
                       />
                       <button
-                        class="text-white absolute end-2.5 bottom-2 bg-primary-color focus:ring-4 focus:outline-none focus:ring-primary-color focus:ring-opacity-30 font-medium rounded-lg text-sm px-4 py-2"
+                        id="apply-button"
+                        class="btn btn-sm absolute end-2.5 bottom-2.5 bg-primary-color text-white"
+                        disabled
                       >
                         Apply
                       </button>
