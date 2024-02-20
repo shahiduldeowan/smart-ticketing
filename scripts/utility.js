@@ -62,5 +62,38 @@ function enableDisableButtonById(id, isVisible) {
   } else {
     element.removeAttribute("disabled");
   }
-  console.log("object :>> Clicked enable", element.disabled);
+}
+
+function appendTableRowToTableBodyById(seatNumber, id) {
+  const tableBody = document.getElementById(id);
+
+  // Create the new row element
+  const newRow = document.createElement("tr");
+  newRow.id = `${seatNumber}-row`;
+  newRow.classList.add("border-0");
+
+  // Create and append cells with their content and classes
+  const seatCell = document.createElement("td");
+  seatCell.classList.add("text-left");
+  seatCell.textContent = seatNumber.toUpperCase();
+  newRow.appendChild(seatCell);
+
+  const classCell = document.createElement("td");
+  classCell.classList.add("text-center");
+  classCell.textContent = "Economy";
+  newRow.appendChild(classCell);
+
+  const priceCell = document.createElement("td");
+  priceCell.classList.add("text-right");
+  priceCell.textContent = "550";
+  newRow.appendChild(priceCell);
+
+  // Append the new row to the table body
+  tableBody.appendChild(newRow);
+}
+
+function removeTableRowFromTableBodyById(seatNumber, id) {
+  const tableBody = document.getElementById(id);
+  const oldRow = document.getElementById(`${seatNumber}-row`);
+  tableBody.removeChild(oldRow);
 }
