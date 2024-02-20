@@ -247,7 +247,7 @@
                     <p
                       class="font-inter text-primary-color text-[8px] md:text-base lg:text-lg font-medium ml-1 lg:ml-2"
                     >
-                      40 Seats left
+                      <span id="seats-left-id">40</span> Seats left
                     </p>
                   </div>
                 </div>
@@ -312,7 +312,7 @@
         <!-- Seat Booking Section Start -->
         <section id="seat-booking-section-id" class="w-11/12 lg:container mx-auto py-3 lg:py-8 bg-white rounded-3xl">
           <div class="w-full flex flex-col md:flex-row lg:flex-row gap-3 md:gap-0 lg:gap-0">
-            <div class="w-full md:w-7/12 lg:w-7/12 h-96 px-3 md:px-3 lg:px-8">
+            <div class="w-full md:w-7/12 lg:w-7/12 h-auto px-3 md:px-3 lg:px-8">
               <div class="h-full w-full">
                 <h3 class="font-raleway text-2xl font-semibold mb-5">Select Your Seat</h3>
                 <div class="py-4 border-y border-dashed border-gray-text-color border-opacity-20 flex justify-between">
@@ -325,7 +325,330 @@
                     <span class="text-lg text-primary-color font-medium">Selected</span>
                   </div>
                 </div>
-                <div>1</div>
+                <div>
+                  <div class="my-6 flex justify-end">
+                    <button class="btn join-item h-14 w-32" disabled>
+                      <img src="./images/staring.svg" alt="" srcset="" />
+                    </button>
+                  </div>
+                  <!-- Seat Buttons -->
+                  <div class="flex">
+                    <!-- Flex Column A - J -->
+                    <div class="flex flex-col gap-6">
+                      <div class="h-14 w-8 flex justify-start items-center">
+                        <span class="col-start-1 col-span-1 text-lg font-medium text-gray-text-color text-opacity-50"
+                          >A</span
+                        >
+                      </div>
+                      <div class="h-14 w-8 flex justify-start items-center">
+                        <span class="col-start-1 col-span-1 text-lg font-medium text-gray-text-color text-opacity-50"
+                          >B</span
+                        >
+                      </div>
+                      <div class="h-14 w-8 flex justify-start items-center">
+                        <span class="col-start-1 col-span-1 text-lg font-medium text-gray-text-color text-opacity-50"
+                          >C</span
+                        >
+                      </div>
+                      <div class="h-14 w-8 flex justify-start items-center">
+                        <span class="col-start-1 col-span-1 text-lg font-medium text-gray-text-color text-opacity-50"
+                          >D</span
+                        >
+                      </div>
+                      <div class="h-14 w-8 flex justify-start items-center">
+                        <span class="col-start-1 col-span-1 text-lg font-medium text-gray-text-color text-opacity-50"
+                          >E</span
+                        >
+                      </div>
+                      <div class="h-14 w-8 flex justify-start items-center">
+                        <span class="col-start-1 col-span-1 text-lg font-medium text-gray-text-color text-opacity-50"
+                          >F</span
+                        >
+                      </div>
+                      <div class="h-14 w-8 flex justify-start items-center">
+                        <span class="col-start-1 col-span-1 text-lg font-medium text-gray-text-color text-opacity-50"
+                          >G</span
+                        >
+                      </div>
+                      <div class="h-14 w-8 flex justify-start items-center">
+                        <span class="col-start-1 col-span-1 text-lg font-medium text-gray-text-color text-opacity-50"
+                          >H</span
+                        >
+                      </div>
+                      <div class="h-14 w-8 flex justify-start items-center">
+                        <span class="col-start-1 col-span-1 text-lg font-medium text-gray-text-color text-opacity-50"
+                          >I</span
+                        >
+                      </div>
+                      <div class="h-14 w-8 flex justify-start items-center">
+                        <span class="col-start-1 col-span-1 text-lg font-medium text-gray-text-color text-opacity-50"
+                          >J</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Seat Section -->
+                    <div id="seats-container-id" class="w-full flex justify-between items-center">
+                      <!-- ################## Fist Grid ################## -->
+                      <div class="grid grid-cols-2 gap-x-8 gap-y-6">
+                        <button
+                          id="a1"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          A1
+                        </button>
+                        <button
+                          id="a2"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          A2
+                        </button>
+                        <button
+                          id="b1"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          B1
+                        </button>
+                        <button
+                          id="b2"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          B2
+                        </button>
+                        <button
+                          id="c1"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          C1
+                        </button>
+                        <button
+                          id="c2"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          C2
+                        </button>
+                        <button
+                          id="d1"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          D1
+                        </button>
+                        <button
+                          id="d2"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          D2
+                        </button>
+                        <button
+                          id="e1"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          E1
+                        </button>
+                        <button
+                          id="e2"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          E2
+                        </button>
+                        <button
+                          id="f1"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          F1
+                        </button>
+                        <button
+                          id="f2"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          F2
+                        </button>
+                        <button
+                          id="g1"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          G1
+                        </button>
+                        <button
+                          id="g2"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          G2
+                        </button>
+                        <button
+                          id="h1"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          H1
+                        </button>
+                        <button
+                          id="h2"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          H2
+                        </button>
+                        <button
+                          id="i1"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          I1
+                        </button>
+                        <button
+                          id="i2"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          I2
+                        </button>
+                        <button
+                          id="j1"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          J1
+                        </button>
+                        <button
+                          id="j2"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          J2
+                        </button>
+                      </div>
+
+                      <!-- ################## Second Grid ################## -->
+                      <div class="grid grid-cols-2 gap-x-8 gap-y-6">
+                        <button
+                          id="a3"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          A3
+                        </button>
+
+                        <button
+                          id="a4"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          A4
+                        </button>
+                        <button
+                          id="b3"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          B3
+                        </button>
+
+                        <button
+                          id="b4"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          B4
+                        </button>
+                        <button
+                          id="c3"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          C3
+                        </button>
+
+                        <button
+                          id="c4"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          C4
+                        </button>
+                        <button
+                          id="d3"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          D3
+                        </button>
+
+                        <button
+                          id="d4"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          D4
+                        </button>
+                        <button
+                          id="e3"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          E3
+                        </button>
+
+                        <button
+                          id="e4"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          E4
+                        </button>
+                        <button
+                          id="f3"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          F3
+                        </button>
+
+                        <button
+                          id="f4"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          F4
+                        </button>
+                        <button
+                          id="g3"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          G3
+                        </button>
+
+                        <button
+                          id="g4"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          G4
+                        </button>
+                        <button
+                          id="h3"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          H3
+                        </button>
+
+                        <button
+                          id="h4"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          H4
+                        </button>
+                        <button
+                          id="i3"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          I3
+                        </button>
+
+                        <button
+                          id="i4"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          I4
+                        </button>
+                        <button
+                          id="j3"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          J3
+                        </button>
+
+                        <button
+                          id="j4"
+                          class="btn join-item h-14 w-32 bg-secondary-background-color text-lg font-medium text-gray-text-color text-opacity-50 rounded-xl"
+                        >
+                          J4
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -348,8 +671,9 @@
                           <th class="text-left">
                             Seat
                             <span
+                              id="seats-add-id"
                               class="indicator-item badge badge-secondary bg-primary-color border-primary-color text-xs font-bold"
-                              >2</span
+                              >0</span
                             >
                           </th>
                           <th class="text-center">Class</th>
@@ -358,6 +682,9 @@
                       </thead>
                       <tbody>
                         <!-- row 1 -->
+                        <!-- I want to add table row from here.. -->
+
+                        <!--  -->
                         <tr class="border-0">
                           <td class="text-left">C2</td>
                           <td class="text-center">Economy</td>
