@@ -97,3 +97,14 @@ function removeTableRowFromTableBodyById(seatNumber, id) {
   const oldRow = document.getElementById(`${seatNumber}-row`);
   tableBody.removeChild(oldRow);
 }
+
+function updatePriceById(id, quantity, discount = 0) {
+  const element = document.getElementById(id);
+  let price = parseInt(element.innerText);
+  price = 550 * quantity;
+  if (discount && discount > 0) {
+    const discount = (price * discount) / 100;
+    price = price + discount;
+  }
+  element.innerText = price;
+}
