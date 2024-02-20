@@ -28,6 +28,7 @@
               "primary-color": "#1dd100",
               "gray-text-color": "#030712",
               "secondary-background-color": "#F7F8F8",
+              "modal-color": "#27AE60",
             },
           },
         },
@@ -160,6 +161,26 @@
       <!-- Banner Section End -->
     </header>
     <!-- Header End -->
+
+    <!-- Modal Start -->
+    <div class="modal" role="dialog" id="my_modal_8">
+      <div class="modal-box flex flex-col justify-center items-center">
+        <div>
+          <img src="./images/success.png" alt="" srcset="" />
+        </div>
+        <h3 class="font-bold text-2xl text-modal-color my-9">SUCCESS</h3>
+        <div class="text-center text-sm">
+          <p class="py-4">
+            Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you.
+          </p>
+          <p class="text-black text-opacity-40">Shortly you will find a confirmation in your email.</p>
+        </div>
+        <div class="modal-action">
+          <a id="modal-button" href="#" class="btn bg-modal-color text-white rounded-3xl">Continue</a>
+        </div>
+      </div>
+    </div>
+    <!-- Modal End -->
 
     <!-- Main Start -->
     <main>
@@ -786,13 +807,13 @@
                       />
                     </div>
                     <div class="w-full mb-6">
-                      <button
+                      <a
                         id="next-button"
-                        class="btn btn-primary w-full bg-primary-color border-none text-white text-lg font-bold"
+                        href="#my_modal_8"
+                        class="btn btn-primary w-full bg-primary-color hover:bg-primary-color border-none text-white text-lg font-bold"
                         disabled
+                        >Next</a
                       >
-                        Next
-                      </button>
                     </div>
                     <div class="flex justify-around mb-6">
                       <a class="link link-accent text-black text-opacity-30">Terms and Conditions</a>
@@ -810,7 +831,7 @@
     </main>
     <!-- Main End -->
 
-    <footer></footer>
+    <footer class="mb-40"></footer>
     <script src="./scripts/utility.js"></script>
     <script src="./scripts/index.js"></script>
   </body>
