@@ -40,10 +40,56 @@ function handleSeatClicks(event) {
   // Update Total Price
   updatePriceById("total-price", selectedSeats.length);
   updatePriceById("grand-total", selectedSeats.length);
+
+  if (selectedSeats.length === 0) {
+    enableDisableButtonById("next-button");
+  }
+}
+
+function handleApplyButton(event) {
+  event.preventDefault();
+  const couponCodeInputElement = document.getElementById("coupon-code");
+  let discount = couponCodes[couponCodeInputElement.value];
+  if (discount) {
+    doHtmlElementDisplayFlexHiddenById("coupon-error-message", true);
+    updateTextById("discount-id-for-coupon", discount);
+    doHtmlElementDisplayFlexHiddenById("coupon-form");
+    doHtmlElementDisplayFlexHiddenById("coupon-success-message");
+    updatePriceById("grand-total", selectedSeats.length, discount);
+  } else {
+    // Show coupon code error
+    doHtmlElementDisplayFlexHiddenById("coupon-error-message");
+  }
+}
+
+function handlePassengerNameInput(event) {
+  let inputValue = event.target.value;
+  const isPassengerNameEmpty = isEmptyInputValueById("phone-number");
+
+  if (selectedSeats.length > 0 && !isPassengerNameEmpty && inputValue.length > 0) {
+    enableDisableButtonById("next-button", true);
+  } else {
+    enableDisableButtonById("next-button");
+  }
+}
+
+function handlePhoneNumberInput(event) {
+  let inputValue = event.target.value;
+  const isPassengerNameEmpty = isEmptyInputValueById("passenger-name");
+
+  if (selectedSeats.length > 0 && !isPassengerNameEmpty && inputValue.length > 0) {
+    enableDisableButtonById("next-button", true);
+  } else {
+    enableDisableButtonById("next-button");
+  }
+}
+
+function handleNextButton(event) {
+  event.preventDefault();
 }
 
 document.getElementById("seats-container-id").addEventListener("click", handleSeatClicks);
-document.getElementById("apply-button").addEventListener("click", function (event) {
-  event.preventDefault();
-  console.log("object :>> Apply Button Clicked");
-});
+document.getElementById("apply-button").addEventListener("click", handleApplyButton);
+document.getElementById("passenger-name").addEventListener("keyup", handlePassengerNameInput);
+document.getElementById("phone-number").addEventListener("keyup", handlePhoneNumberInput);
+document.getElementById("next-button").addEventListener("keyup", handleNextButton);
