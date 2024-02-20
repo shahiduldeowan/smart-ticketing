@@ -680,21 +680,14 @@
                           <th class="text-right">Price</th>
                         </tr>
                       </thead>
-                      <tbody id="table-body">
-                        <!-- row 1 -->
-                        <tr class="border-0">
-                          <td class="text-left">C2</td>
-                          <td class="text-center">Economy</td>
-                          <td class="text-right">550</td>
-                        </tr>
-                      </tbody>
+                      <tbody id="table-body-id"></tbody>
                       <tfoot>
                         <tr
                           class="font-medium text-base text-gray-text-color border-t border-gray-text-color border-opacity-20"
                         >
                           <td class="text-left">Total Price</td>
                           <td></td>
-                          <td class="text-right">BDT 1100</td>
+                          <td class="text-right">BDT <span id="total-price">0</span></td>
                         </tr>
                       </tfoot>
                     </table>
@@ -718,7 +711,7 @@
                   </form>
                   <div class="flex justify-between items-center font-medium text-gray-text-color mt-6">
                     <span>Grand Total</span>
-                    <span>BDT 1100</span>
+                    <span>BDT <span id="grand-total">0</span></span>
                   </div>
                 </div>
                 <div>
