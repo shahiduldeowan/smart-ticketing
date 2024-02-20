@@ -54,3 +54,13 @@ function updateSeatsCountById(id, operation) {
     element.innerText = seats + 1;
   }
 }
+
+function enableDisableButtonById(id, isVisible) {
+  const element = document.getElementById(id);
+  if (!isVisible) {
+    element.disabled = true;
+  } else {
+    element.removeAttribute("disabled");
+  }
+  console.log("object :>> Clicked enable", element.disabled);
+}
