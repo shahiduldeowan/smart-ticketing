@@ -1,3 +1,4 @@
+const modal = document.getElementById("my_modal_8");
 const selectedSeats = [];
 const couponCodes = { NEW15: 15, "Couple 20": 20 };
 
@@ -84,12 +85,9 @@ function handlePhoneNumberInput(event) {
   }
 }
 
-function handleNextButton(event) {
-  event.preventDefault();
-}
+function handleContinueModalButton() {}
 
 document.getElementById("seats-container-id").addEventListener("click", handleSeatClicks);
 document.getElementById("apply-button").addEventListener("click", handleApplyButton);
 document.getElementById("passenger-name").addEventListener("keyup", handlePassengerNameInput);
 document.getElementById("phone-number").addEventListener("keyup", handlePhoneNumberInput);
-document.getElementById("next-button").addEventListener("keyup", handleNextButton);
