@@ -69,8 +69,14 @@ function handleSeatClicks(event) {
       updateSeats("sub");
     }
   }
-
-  console.log("object :>> ", selectedSeats.length);
+  // Handle Apply button enable disabled
+  enableDisableButtonById("apply-button", selectedSeats.length === 4);
 }
 
 document.getElementById("seats-container-id").addEventListener("click", handleSeatClicks);
+document.getElementById("apply-button").addEventListener("click", function (event) {
+  event.preventDefault();
+  console.log("object :>> Apply Button Clicked");
+});
+
+//table-body
